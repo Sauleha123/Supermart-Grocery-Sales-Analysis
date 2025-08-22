@@ -28,3 +28,5 @@ having count(*) > 1
 select * 
 from Supermart_Sales
 where Sales <= 0 or Profit< 0 or Discount < 0 or Discount > 1
+
+
