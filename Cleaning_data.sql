@@ -24,3 +24,7 @@ group by Order_ID
 having count(*) > 1
 
 
+-- Check for negative or zero values
+select * 
+from Supermart_Sales
+where Sales <= 0 or Profit< 0 or Discount < 0 or Discount > 1
