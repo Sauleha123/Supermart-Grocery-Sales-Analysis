@@ -30,3 +30,32 @@ from Supermart_Sales
 where Sales <= 0 or Profit< 0 or Discount < 0 or Discount > 1
 
 
+-- Outlier Checks
+
+-- 1. Highest Sales Values
+select top 10 *
+from Supermart_Sales
+order by sales desc
+
+select 
+min(Sales) as MinSales,
+max(Sales) as MaxSales,
+Avg(Sales) as AvgSales,
+STDEV(Sales) as StdDevSales
+from Supermart_Sales
+-- "Sales values range between 500 and 2500. No extreme or unrealistic outliers were found. Distribution appears valid."
+
+
+-- 2. Lowest Profit Values
+select top 10 *
+from Supermart_Sales
+order by Profit asc
+-- "Checked profit distribution, found no negative values. Lowest profit entries starts from ~25, which seems valid, so no outlier removal needed."
+
+
+-- 3. Highest Discount Values
+select top 10 *
+from Supermart_Sales
+order by Discount desc
+-- "Checked for Discount column. Max discount offered is 35%, which is within a realistic retail range. No outlier removal required."
+
