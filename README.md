@@ -49,6 +49,9 @@ The analysis and dashboard answer key business questions:
 * **Excel** as supporting dataset format
 * **DAX** for custom measures
 
+## Data Source :
+
+The dataset was provided by Unified Mentor Pvt. Ltd. through their internship program and is intended for academic/learning purposes. Hence, the dataset file is not included in this repository.
 
 
 
