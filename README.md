@@ -19,7 +19,7 @@ The analysis and dashboard answer key business questions:
 1. Download the repo or clone it:
 
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/Sauleha123/Supermart-Grocery-Sales-Analysis
    ```
 
 2. Run the SQL scripts in your preferred SQL environment (MySQL / PostgreSQL / etc.) to perform EDA.
@@ -48,5 +48,6 @@ The analysis and dashboard answer key business questions:
 * **Power BI** for dashboard & visualization
 * **Excel** as supporting dataset format
 * **DAX** for custom measures
+
 
 
